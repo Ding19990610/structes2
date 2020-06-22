@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日期对象</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //使用new关键字创建一个新的对象，后面要跟一个构造函数调用。
+    //Date()构造函数，用于创建一个日期对象
+    //日期对象中存放一个时刻，就是创建date对象时的时间。
+    var date = new Date();
+    console.log(date);
+    
+    //获取完整的年份信息
+    var year = date.getFullYear();
+    console.log(year);
+    
+    //获取月份(取值范围0-11)，如果取中国时间要在后面+1。
+    var month = date.getMonth()+1;
+    console.log(month);
+    
+    //获取一月中的第几日
+    var day = date.getDate();
+    console.log(day);
+    
+    //获取星期几，一周中的第几日
+    var week = date.getDay();
+    console.log(week);
+    
+    //获取小时
+    var hour = date.getHours();
+    console.log(hour)
+    
+    //获取分钟数
+    var minute = date.getMinutes();
+    console.log(minute);
+    
+    //获取秒数
+    var second = date.getSeconds();
+    console.log(second);
+    
+    //获取毫秒数
+    var ms = date.getMilliseconds();
+    console.log(ms);
+    
+    //获取时间戳(从1970年1月1日0点0分0秒到当前这个日期所经过的毫秒数)
+    console.log(date.getTime());  //具有唯一性
+    //返回给定日期的毫秒数
+    console.log(Date.parse('2016/9/14 16:50:20'));
+    console.log(Date.parse('Sep 14 2016 16:50:20'));
+    
+     // 进阶---> 日期格式化插件封装
+     var nowDate = new Date();
+     console.log(nowDate.getFullYear()+'-'+(nowDate.getMonth()+1)+"-"+nowDate.getDate()+' '+nowDate.getHours()+":"+nowDate.getMinutes()+':'+nowDate.getSeconds())
+
+    //获取对应的完整日期
+    //月份从0开始
+    console.log(new Date(2016,9,14,16,50,20));//Fri Oct 14 2016 16:50:20 GMT+0800 (中国标准时间)
+    //传入字符换形式，返回对应的时间
+    console.log(new Date('2016 9 14 16:50:20'));//Wed Sep 14 2016 16:50:20 GMT+0800 (中国标准时间)
+    //根据毫秒数返回时间
+    console.log(new Date(1473843020000));//Wed Sep 14 2016 16:50:20 GMT+0800 (中国标准时间)
+</script>
+</html>

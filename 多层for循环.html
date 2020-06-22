@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var count = 0;
+        // var num = 0 ;
+        // for(var i = 0 ; i < 9 ; i ++){
+        //     num ++ ; //外层for 循环次数  
+        //     console.log(i ,"i");
+        //     for(var j = 0 ; j < 9;j ++){
+        //         count ++ ; //内层for 循环次数
+        //     }
+        // }
+        // console.log(num)
+        // console.log(count)
+
+        var arr = [
+            ["a","b"],
+            ["a","b"],
+            ["a","b","ac"],
+            ["a","b"],
+            ["a","b","ac"],
+            ["a","b","ac"]
+        ]
+        for(var i = 0 ; i < arr.length ; i++){
+            if(arr[i].length ==3){
+                for(var j = 0 ;j < arr[i].length ; j++){
+                    console.log(arr[i][j])
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>

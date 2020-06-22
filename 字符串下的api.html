@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 字符串对象有长度，表示字符的个数
+        // 字符串有索引值，从0开始，可以根据索引值获取单个字符
+        // 有api 可以 通过api 操作字符串：增删改查、替换、截取片断等
+
+        var str = new String("abcdefg");
+
+        var str = "abcdefg"; 
+
+        console.log(str);
+        // 获取字符串长度
+        console.log(str.length)
+        // 获取字符串第一个字符
+        console.log(str[0])
+        // 获取字符串最后一个字符
+        console.log(str[str.length - 1])
+        // 获取每一个字符 (遍历字符串)
+        for(var i = 0;i<str.length;i++){
+            console.log(str[i]) 
+        }
+    </script>
+</body>
+</html>
